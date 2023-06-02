@@ -6,14 +6,7 @@ Headers
     content-type: application/json; charset=UTF-8
     host: www4.bcp.com.bo
     user-agent: okhttp/3.12.1
-------------------------------------------------------------------------------
-Pantallas que se utilizan 
-- FragmentSlider
-- FragmentLogin
-- FragmentInformation
-- FragmentPINReset
-- FragmentLocation
-- FragmentCashoutGenerate
+
 ------------------------------------------------------------------------------
 
 https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/device/identification
@@ -425,6 +418,199 @@ Request
   "auth_token": "d51f2051-5711-46ac-ae15-db3b378ccdd6"
 }
 
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/account/movements/get
+
+Request
+{
+  "account": "75211660",
+  "private_token": "6bf78e7c-8633-43fe-a828-1241db8526a7",
+  "auth_token": "f642fc5a-3752-4b8f-9ce4-3bbe3c9442f2"
+}
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/account/search
+
+Request
+{
+  "account_number": "20151149564307",
+  "private_token": "53916601-34e9-4d55-9033-f28de440270d",
+  "auth_token": "82d6c802-5aed-4984-8d61-9918ded7f888"
+}
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/bank/account/deposit
+
+Request 
+{
+  "account_currency": "BOL",
+  "account_name": "RODRIGO JAUREGUI CHOQUE",
+  "account_number": "20151149564307",
+  "account_type": "AHO",
+  "amount": 0.01,
+  "card_code": "",
+  "detail": "",
+  "origin_account": "75211660",
+  "origin_account_currency": "BOL",
+  "origin_account_type": "BIL",
+  "token": "68|83|110|67|115|88|102|117|53|43|97|82|84|53|103|65|43|71|85|99|66|47|116|79|98|103|50|74|115|65|61|61|10",
+  "certified_id": 3578991,
+  "minor_form": {
+    "person": {
+      "document_extension": "LP",
+      "document_number": "6966963",
+      "document_type": "Q",
+      "first_last_name": "CHOQUE",
+      "names": "RODRIGO JAUREGUI",
+      "second_last_name": ""
+    },
+    "destination": "",
+    "origin": ""
+  },
+  "pan": "",
+  "pin": "67|105|47|72|116|116|106|54|76|54|71|66|70|120|113|54|47|56|104|89|84|80|69|47|106|43|73|61|10",
+  "private_token": "53916601-34e9-4d55-9033-f28de440270d",
+  "auth_token": "82d6c802-5aed-4984-8d61-9918ded7f888"
+}
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/interbank/movements/get
+
+Request
+{
+  "account": "75211660",
+  "private_token": "53916601-34e9-4d55-9033-f28de440270d",
+  "auth_token": "82d6c802-5aed-4984-8d61-9918ded7f888"
+}
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/cashout/movements/get
+
+Request
+{
+  "account": "75211660",
+  "private_token": "c7786c7b-8ccb-4d8c-91e4-8c9441c245b3",
+  "auth_token": "4d8076f7-ddd7-4c71-a4a8-af6bdbb6e4bf"
+}
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/payment/companies/get
+
+Request
+{
+  "private_token": "7d272887-2d5f-42e7-a311-7fb89f2dd738",
+  "auth_token": "9cbb9b96-070b-42eb-8bb7-d7f6bb22f0b5"
+}
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/password/change/execut
+
+Request
+{
+  "certified_id": 3604207,
+  "old_pin": "52|66|43|105|50|70|71|118|121|43|77|98|54|89|70|111|121|57|87|120|47|103|80|67|97|119|81|61|10",
+  "pin": "53|66|109|115|50|102|79|67|109|121|113|47|107|89|87|65|50|118|57|110|80|80|50|73|115|98|85|61|10",
+  "private_token": "03472bcf-4973-48cc-bfb6-0b898a191bad",
+  "auth_token": "c8afaf3c-10d8-4a90-b8cb-e98efd2c0a5b"
+}
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/device/authenticate
+
+Request
+{
+  "certificate": false,
+  "device_id": "3d36e231ac41676f",
+  "device_type": "android",
+  "encrypted_device": "21acd54a1a78bd0d3aefa828b12b14246e92658d64d572217be92ac42927f41f",
+  "send_id": "a4c0hkmp"
+}
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/giftcard/services/get
+
+Request
+{
+  "private_token": "e773d0a8-a6fd-411e-a855-fe4cc41e2d19",
+  "auth_token": "eb76b615-bf4a-42cb-8a29-c45da8e46d3c"
+}
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/location/near/get
+
+Request
+{
+  "channels": [
+    "ATM",
+    "SOLI_COMERCIO",
+    "AGENTE"
+  ],
+  "latitude": -16.498039899999998425528247025795280933380126953125,
+  "longitude": -68.1336395000000010213625500909984111785888671875,
+  "quantity": 100,
+  "private_token": "e773d0a8-a6fd-411e-a855-fe4cc41e2d19",
+  "auth_token": "eb76b615-bf4a-42cb-8a29-c45da8e46d3c"
+}
+
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/location/near/search
+
+Request
+{
+  "address": "",
+  "channels": [
+    "ATM",
+    "SOLI_COMERCIO",
+    "AGENTE"
+  ],
+  "city": "",
+  "department": "LA PAZ",
+  "latitude": -16.4986273,
+  "longitude": -68.1335532,
+  "point_name": "camacho",
+  "zone": "",
+  "private_token": "e773d0a8-a6fd-411e-a855-fe4cc41e2d19",
+  "auth_token": "eb76b615-bf4a-42cb-8a29-c45da8e46d3c"
+}
+
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+https://www4.bcp.com.bo/BIL_Service2/ServiceBilletera.svc//V1/client/account/loan/search
+
+Request
+{
+  "number_loan": "0000000",
+  "private_token": "e773d0a8-a6fd-411e-a855-fe4cc41e2d19",
+  "auth_token": "eb76b615-bf4a-42cb-8a29-c45da8e46d3c"
+}
 
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
